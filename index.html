@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Carousel dogs</title>
+</head>
+<style type="text/css">
+
+body{
+	background:#2c485c;
+}
+#wrap{
+	perspective:1800px;
+}
+
+	#carousel{
+		
+		 position: relative;
+  width:140px;
+  height:220px;
+  margin:150px auto;
+  transform-style:preserve-3d;
+  transform:rotateY(0deg) rotateX(-10deg);
+	}
+
+	#carousel img {
+		display: block;
+		position: absolute;
+		padding:20px;
+		background-color: rgba(0,0,0,.4);
+		border:1px dashed rgba(255,255,255,0.6);
+		border-radius: 5px;
+		transform:rotateY(0deg) translateZ(0px);
+	}
+
+	form{
+		width:20%;
+		height:auto;
+		border-radius: 4px;
+		background: #6e99b8;
+		color:#fff;
+		padding:15px;
+	}
+	#wrap p {
+		width:1000px;
+		height:1000px;
+		background: -webkit-radial-gradient(center center, 500px 500px,rgba(142,122,122,.8),rgba(0,0,0,0.4));
+		position: absolute;
+		border-radius: 50%;
+		left:-265%;
+		top:-102%;
+		transform: rotateX(90deg);
+	}
+</style>
+<body>
+
+	<form id="form">
+		<h3>How many puppies you wanna see in the gallery?</h3>
+		<label>6</label>
+		<input type="radio" name="puppies" value="6">
+		<label>8</label>
+		<input type="radio"  name="puppies" value="8" >
+		<label>10</label>
+		<input type="radio" name="puppies" value="10" >
+
+	</form>
+	<div id="wrap">
+<div id="carousel">
+
+<p></p>
+</div>
+
+</div>
+<script type="text/javascript" src="carousel.js"></script>
+</body>
+</html>
